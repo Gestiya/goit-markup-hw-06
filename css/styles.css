@@ -44,9 +44,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
     width: 1158px;
     padding: 0 15px;
-    margin: 0 auto;
 }
 
 .page-header {
@@ -312,6 +312,7 @@ body {
 }
 
 .portfolio-title {
+    margin-bottom: 72px;
     font-weight: 700px;
     font-size: 36px;
     line-height: 1.11;
