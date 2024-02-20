@@ -44,9 +44,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
     width: 1158px;
     padding: 0 15px;
+    margin: 0 auto;
 }
 
 .page-header {
@@ -281,9 +281,7 @@ body {
 /* Portfolio section styles */
 .portfolio-section {
     padding-top: 120px;
-    padding-bottom: 120px;
-    padding-left: 156px;
-    padding-right: 156px;  
+    padding-bottom: 120px;  
 }
 
 .portfolio-menu {
@@ -314,8 +312,6 @@ body {
 }
 
 .portfolio-title {
-    margin-bottom: 72px;
-    margin-bottom: 8px;
     font-weight: 700px;
     font-size: 36px;
     line-height: 1.11;
@@ -326,6 +322,8 @@ body {
 }
 
 .portfolio-subtitle {
+    margin-bottom: 72px;
+    margin-bottom: 8px;
     font-weight: 500px;
     font-size: 20px;
     line-height: 1.2;
