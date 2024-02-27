@@ -45,9 +45,6 @@ body {
 
 .page-header {
     border-bottom: 1px solid #e7e9fc;
-    border-bottom: 1px solid #e7e9fc;
-    width: 1440px;
-    height: 72px;
 }
 
 .page-nav {
@@ -88,6 +85,7 @@ body {
 
 .page-menu-contacts {
     font-style: normal;
+    margin-left: auto;
 }
 
 .page-contacts {
@@ -234,7 +232,6 @@ body {
 .team-item {
     background-color: #FFFFFF;
     border-radius: 0 0 4px 4px;
-    padding: 0px 0px 32px 0px;
     width: calc((100% - 72px) / 4);
 }
 
