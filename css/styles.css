@@ -230,9 +230,9 @@ body {
 }
 
 .icon-drawing {
+    fill: #2E2F42;
     width: 64px;
     height: 64px;
-    fill: #2E2F42;
 }
 
 .benefits-subtitle {
@@ -335,6 +335,8 @@ body {
 
 .social-list-svg {
     fill: #F4F4FD;
+    width: 16px;
+    height: 16px;
 }
 
 /* /Team section styles */
@@ -528,5 +530,7 @@ body {
 
 .social-list-svg {
     fill: #f4f4fd;
+    width: 24px;
+    height: 24px;
 }
 /* /Page footer styles */
