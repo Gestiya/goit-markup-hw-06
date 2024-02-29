@@ -180,7 +180,7 @@ body {
     letter-spacing: 0.04em;
     color: #fff;
     background: #4D5AE5;
-    background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .buy-button:hover, 
@@ -230,6 +230,8 @@ body {
 }
 
 .icon-drawing {
+    width: 64px;
+    height: 64px;
     fill: #2E2F42;
 }
 
@@ -313,6 +315,7 @@ body {
 }
 
 .social-list-item {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 64px;
     height: 64px;
 }
@@ -333,6 +336,8 @@ body {
 }
 
 .social-list-svg {
+    width: 16px;
+    height: 16px;
     fill: #F4F4FD;
 }
 
@@ -505,6 +510,7 @@ body {
 }
 
 .social-list-item {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     width: 40px;
     height: 40px;
 }
@@ -525,6 +531,8 @@ body {
  }
 
 .social-list-svg {
+    width: 24px;
+    height: 24px;
     fill: #f4f4fd;
 }
 /* /Page footer styles */
