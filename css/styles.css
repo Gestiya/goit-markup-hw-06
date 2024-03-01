@@ -309,6 +309,7 @@ body {
 }
 
 .social-list-team {
+    padding-top: 8px;
     display: flex;
     justify-content: center;
     gap: 24px;
@@ -432,11 +433,6 @@ body {
 /* /Portfolio section styles */
 
 /* Page footer styles */
-.container {
-    display: flex;
-    align-items: baseline; 
-}
-
 .logo-container {
     margin-right: 120px;
 }
@@ -496,6 +492,8 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-bottom: 16px;
+    font-weight: 500;
     color: #fff;
 }
 
