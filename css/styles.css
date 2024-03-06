@@ -645,7 +645,6 @@ body {
     top: 24px;
     right: 24px;
     stroke-width: 1px;
-    stroke: rgba(0, 0, 0, 0.1);
     width: 24px;
     height: 24px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -701,6 +700,10 @@ body {
 }
 
 .review-form-field-wrapper {
+    margin-bottom: 8px;
+}
+
+.review-form-field-comment {
     margin-bottom: 16px;
 }
 
@@ -758,7 +761,7 @@ body {
     fill: transparent;
 }
 
-.label-for-contacts-checkbox:checked + .privacy-policy-link .review-form-checkbox-span {
+.label-for-contacts-checkbox:checked + .privacy-policy-link:checked .review-form-checkbox-span:checked {
     background-color: #404bbf;
     fill: #F4F4FD;
     border: none;
@@ -783,7 +786,6 @@ body {
     color: #ffffff;
     cursor: pointer;
     background-color: #4D5AE5;
-    border: none;
     border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
