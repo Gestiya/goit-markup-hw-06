@@ -652,6 +652,7 @@ body {
 .modal-close-btn:focus {
     background-color: #404BBF;
     fill: #ffffff;
+    border: none;
 }
 
 .modal-close-btn-icon {
@@ -736,6 +737,10 @@ body {
     border-color: #4D5AE5;
 }
 
+.review-form-message::placeholder {
+    color: rgba(46, 47, 66, 0.4);
+}
+
 .review-form-checkbox-wrapper {
     margin-bottom: 24px;
 }
@@ -759,7 +764,7 @@ body {
     fill: transparent;
 }
 
-.label-for-contacts-checkbox:checked + .privacy-policy-link:checked .review-form-checkbox-span:checked {
+.review-form-checkbox-span:checked {
     background-color: #404bbf;
     fill: #F4F4FD;
     border: none;
@@ -783,7 +788,7 @@ body {
     margin-right: auto;
     padding: 16px 32px;
     height: 56px;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
