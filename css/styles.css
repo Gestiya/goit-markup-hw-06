@@ -537,6 +537,11 @@ body {
     color: #fff;
 }
 
+.subscribe-form {
+    display: flex;
+    gap: 24px;
+}
+
 .footer-input {
     border: 1px solid white;
     background-color: transparent;
@@ -593,7 +598,8 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
     visibility: hidden;
-    transition: opacity 250ms linear visibility 250ms linear;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: rgba(46, 47, 66, 0.4);
 }
 
 .backdrop.is-open {
@@ -615,9 +621,17 @@ body {
     width: 408px;
     min-height: 584px;
     background: #fcfcfc;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .modal-close-btn {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     position: absolute;
     border: none;
     padding: 0;
@@ -629,11 +643,17 @@ body {
     stroke: rgba(0, 0, 0, 0.1);
     width: 24px;
     height: 24px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
     background-color: #404BBF;
+    fill: #ffffff;
+}
+
+.modal-close-btn-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* /Modal window styles */
 /* Review form styles */
@@ -656,6 +676,10 @@ body {
     background-color: transparent;
     padding-left: 62px;
     transition: border 250ms linear;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    padding-left: 38px;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .review-form-input:focus {
@@ -665,14 +689,14 @@ body {
 .review-form-field-label {
     display: block;
     font-size: 12px;
-    line-height: 14px; 
+    line-height: 1.17; 
     letter-spacing: 0.04em;
     color: #8e8f99;
     margin-bottom: 4px;
 }
 
 .review-form-field-wrapper {
-    margin-bottom: 8px;
+    margin-bottom: 16px
 }
 
 .review-form-input-wrapper {
@@ -684,4 +708,76 @@ body {
     top: 50%;
     left: 16px;
     transform: translateY(-50%);
+    height: 24px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    fill: #4D5AE5;
+}
+
+.review-form-message {
+    width: 100%;
+    height: 120px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 8px 16px;
+    outline: transparent;
+    resize: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-color: #4D5AE5;
+}
+
+.review-form-checkbox-wrapper {
+    margin-bottom: 24px;
+}
+
+.review-form-checkbox-label {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99; 
+}
+
+.review-form-checkbox-span {
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+}
+
+.review-form-checkbox-span:focus
+.review-form-checkbox-span:hover {
+    background-color: #404bbf;
+    border: none;
+    fill: #F4F4FD;
+}
+
+.privacy-policy-link {
+    color: #4d5ae5;
+}
+
+.review-form-submit-btn {
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4D5AE5;
+    border: none;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }

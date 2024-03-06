@@ -428,10 +428,10 @@
             </button>
         </form>
     </div>
-      </div>
- 
-  </footer>
-  <div class="backdrop">
+  </div>
+</footer>
+
+  <div class="backdrop is-open">
     <div class="modal">
       <button class="modal-close-btn" type="button">
         <svg class="modal-close-btn-icon" width="8" height="8" aria-label="icon close">
@@ -507,16 +507,21 @@
         <div class="review-form-checkbox-wrapper">
           <input 
           type="checkbox" 
-          class="review-form-privacy-checkbox"
-          id="privacy-policy"
-          name="privacy-policy"
+          class="visually-hidden"
+          id="user-privacy"
+          name="user-privacy"
           value="true"
           required>
           <label 
-          for="privacy-policy" 
+          for="user-privacy" 
           class="review-form-checkbox-label">
+          <span class="review-form-checkbox-span">
+            <svg class="review-form-checkbox-icon" width="10" height="8">
+              <use href="./images/icons.svg#icon-click"></use>
+            </svg>
+          </span>
           I accept the terms and conditions of the  
-          <a  class="privacy-policy-link" href="Privacy-Policy"></a>
+          <a class="privacy-policy-link" href="Privacy-Policy"></a>
           </label>
           <button class="review-form-submit-btn" type="submit">Send</button>
         </div>
