@@ -96,7 +96,6 @@ body {
 }
 
 .menu-contacts {
-    font-weight: 400px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -269,7 +268,6 @@ body {
 
 .team-title {
     margin-bottom: 72px;
-    font-weight: 700px;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
@@ -310,7 +308,6 @@ body {
 
 .social-list-team {
     padding-top: 8px;
-    padding-bottom: auto;
     display: flex;
     justify-content: center;
     gap: 24px;
@@ -462,7 +459,6 @@ body {
 
 .logo-footer {
     font-family: "Raleway", sans-serif;
-    font-weight: 700px;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
@@ -529,6 +525,61 @@ body {
 .container-footer {
     display: flex;
     align-items: baseline;
+}
+
+.footer-subscribe-paragraph {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px; 
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+}
+
+.footer-input {
+    border: 1px solid white;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    padding-left: 16px;
+    color: white;
+    border: 1px solid #fff;
+    width: 264px;
+    height: 40px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.button-subs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    background-color: #4D5AE5;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    min-width: 165px;
+    height: 40px;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-subs:hover, .button-subs:focus {
+    background-color: #404BBF;
+}
+
+.icon-subs {
+    margin-left: 16px;
 }
 /* /Page footer styles */
 /* Backdrop styles */
