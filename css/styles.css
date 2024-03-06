@@ -701,7 +701,7 @@ body {
 }
 
 .review-form-field-wrapper {
-    margin-bottom: 8px
+    margin-bottom: 16px;
 }
 
 .review-form-input-wrapper {
@@ -758,11 +758,10 @@ body {
     fill: transparent;
 }
 
-.review-form-checkbox-span:focus
-.review-form-checkbox-span:hover {
+.label-for-contacts-checkbox:checked + .privacy-policy-link .review-form-checkbox-span {
     background-color: #404bbf;
-    border: none;
     fill: #F4F4FD;
+    border: none;
 }
 
 .privacy-policy-link {
@@ -789,3 +788,4 @@ body {
     border: 1px solid rgba(46, 47, 66, 0.4);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
+
