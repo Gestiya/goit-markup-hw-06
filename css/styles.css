@@ -764,7 +764,7 @@ body {
     fill: transparent;
 }
 
-.input-for-contacts-checkbox:checked + .user-privacy .review-form-checkbox-span {
+.input-for-contacts-checkbox:checked + .review-form-checkbox-label .review-form-checkbox-span {
     background-color: #404bbf;
     fill: #F4F4FD;
     border: none;
@@ -772,6 +772,7 @@ body {
 
 .privacy-policy-link {
     color: #4d5ae5;
+    text-decoration: underline;
 }
 
 .label-for-contacts-checkbox:focus + 
