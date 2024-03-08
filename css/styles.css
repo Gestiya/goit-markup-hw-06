@@ -453,8 +453,7 @@ body {
 
 .page-footer {
     background-color: #2e2f42;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px 0;
 }
 
 .logo-footer {
@@ -465,6 +464,7 @@ body {
     text-transform: uppercase;
     color: #4d5ae5;
     margin-bottom: 16px;
+    max-width: 115px;
     display: inline-block;
 }
 
@@ -527,12 +527,14 @@ body {
     align-items: baseline;
 }
 
+.footer-subscribe-list {
+    margin-left: 80px;
+}
+
 .footer-subscribe-paragraph {
-    padding-left: 80px;
     margin-bottom: 16px;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 24px; 
+    font-size: 16px; 
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
@@ -543,12 +545,8 @@ body {
     gap: 24px;
 }
 
-.subscribe-label {
-    padding-left: 80px;
-}
-
 .footer-input {
-    border: 1px solid white;
+    border: 1px solid #fff;
     background-color: transparent;
     font-size: 12px;
     line-height: 2;
@@ -557,10 +555,7 @@ body {
     width: 264px;
     height: 40px;
     padding-left: 16px;
-    color: white;
-    border: 1px solid #fff;
-    width: 264px;
-    height: 40px;
+    color: #ffffff;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
@@ -574,7 +569,6 @@ body {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    padding-left: 24px;
     background-color: #4D5AE5;
     border: none;
     border-radius: 4px;
@@ -709,14 +703,19 @@ body {
 .review-form-input-wrapper {
     position: relative;
 }
+.review-form-input:focus {
+    border-color: #4D5AE5;
+}
 
 .review-form-field-icon {
     position: absolute;
     top: 50%;
     left: 16px;
     transform: translateY(-50%);
-    height: 24px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.review-form-field-icon:focus {
     fill: #4D5AE5;
 }
 
@@ -765,6 +764,7 @@ body {
     align-items: center;
     justify-content: center;
     fill: transparent;
+    cursor: pointer;
 }
 
 .input-for-contacts-checkbox:checked + .review-form-checkbox-label .review-form-checkbox-span {
@@ -807,3 +807,6 @@ body {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
+.review-form-checkbox-icon {
+    fill: #F4F4FD;
+}
