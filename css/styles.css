@@ -703,9 +703,6 @@ body {
 .review-form-input-wrapper {
     position: relative;
 }
-.review-form-input:focus {
-    border-color: #4D5AE5;
-}
 
 .review-form-field-icon {
     position: absolute;
@@ -737,6 +734,10 @@ body {
 
 .review-form-message:focus {
     border-color: #4D5AE5;
+}
+
+.review-form-input:focus + .review-form-field-icon {
+    fill: #4d5ae5;
 }
 
 .review-form-message::placeholder {
