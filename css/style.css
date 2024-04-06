@@ -11,7 +11,8 @@ ul, ol {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: underline;
+    color: inherit;
 }
 
 button {
@@ -918,6 +919,8 @@ border-color: #4d5ae5;
 }
 
 .modal {
+    width: 320px;
+    max-height: 623px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -975,6 +978,11 @@ border-color: #4d5ae5;
     margin-right: auto;
 }
 
+.privacy-policy-link {
+    color: #4d5ae5;
+    text-decoration-skip-ink: none;
+}
+
 .review-form-message {
     width: 100%;
     height: 120px;
@@ -1005,6 +1013,10 @@ border-color: #4d5ae5;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 16px;
+}
+
+.review-form-input-wrapper {
+    position: relative;
 }
 
 .review-form-input {
@@ -1064,11 +1076,6 @@ border-color: #4d5ae5;
     margin-bottom: 4px;
 }
 
-.privacy-policy-link {
-    color: #4d5ae5;
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
-}
 
 .review-form-checkbox-wrapper {
     margin-bottom: 24px;
@@ -1160,6 +1167,11 @@ border: none;
     max-width: 408px;
 }
 
+.privacy-policy-link {
+    color: #4d5ae5;
+    text-decoration-skip-ink: none;
+}
+
 .review-form-field-label {
     display: block;
     font-size: 12px;
@@ -1217,11 +1229,6 @@ border: none;
     letter-spacing: 0.04em;
     color: #8e8f99;
     line-height: 1.17;
-}
-
-.privacy-policy-link {
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
 }
 
 .review-form-checkbox-span {
